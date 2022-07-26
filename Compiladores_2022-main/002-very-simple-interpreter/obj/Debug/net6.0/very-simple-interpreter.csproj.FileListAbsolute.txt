@@ -1,0 +1,15 @@
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\bin\Debug\net6.0\very-simple-interpreter.exe
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\bin\Debug\net6.0\very-simple-interpreter.deps.json
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\bin\Debug\net6.0\very-simple-interpreter.runtimeconfig.json
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\bin\Debug\net6.0\very-simple-interpreter.dll
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\bin\Debug\net6.0\very-simple-interpreter.pdb
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.csproj.AssemblyReference.cache
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.AssemblyInfoInputs.cache
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.AssemblyInfo.cs
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.csproj.CoreCompileInputs.cache
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.dll
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\refint\very-simple-interpreter.dll
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.pdb
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\very-simple-interpreter.genruntimeconfig.cache
+D:\Users\cc51859512810\Desktop\Compiladores_2022-main\002-very-simple-interpreter\obj\Debug\net6.0\ref\very-simple-interpreter.dll

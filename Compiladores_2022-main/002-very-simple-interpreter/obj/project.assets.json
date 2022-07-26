@@ -1,0 +1,65 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net6.0": []
+  },
+  "packageFolders": {
+    "D:\\Users\\cc51859512810\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Users\\cc51859512810\\Desktop\\Compiladores_2022-main\\002-very-simple-interpreter\\very-simple-interpreter.csproj",
+      "projectName": "very-simple-interpreter",
+      "projectPath": "D:\\Users\\cc51859512810\\Desktop\\Compiladores_2022-main\\002-very-simple-interpreter\\very-simple-interpreter.csproj",
+      "packagesPath": "D:\\Users\\cc51859512810\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\cc51859512810\\Desktop\\Compiladores_2022-main\\002-very-simple-interpreter\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "D:\\Users\\cc51859512810\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
