@@ -3,6 +3,9 @@ namespace VerySimpleInterpreter.Lexer
     public class BasicLexer
     {
 
+        public Int32 Line{get;protected set;}
+        public Int32 Column{get;protected set;}
+
         public string Filename {get; protected set;}
         public SymbolTable SymbolTable {get; protected set;}
         
@@ -16,6 +19,7 @@ namespace VerySimpleInterpreter.Lexer
                 st = new SymbolTable();
             SymbolTable = st;
             _reader = new StreamReader(Filename);
+            Column = Line = 1;
         }
 
         public Token GetNextToken()
@@ -38,7 +42,12 @@ namespace VerySimpleInterpreter.Lexer
                 case '(': _peek = null; return new Token(ETokenType.OE);
                 case ')': _peek = null; return new Token(ETokenType.CE);
                 case '=': _peek = null; return new Token(ETokenType.AT);
-                case '\n':_peek = null; return new Token(ETokenType.EOL);                
+                case '\n':
+                    _peek = null; 
+                    Column = 1;
+                    Line++;
+                    return new Token(ETokenType.EOL);                
+
             }
 
             if (_peek == '$')  //$[a-z]+
@@ -71,6 +80,7 @@ namespace VerySimpleInterpreter.Lexer
                     _peek = NextChar();
                     value = value * 10 + GetValue(_peek);
                 } while (Char.IsDigit(_peek.Value));
+
                 return new Token(ETokenType.NUM, value);
             }        
             
@@ -79,6 +89,7 @@ namespace VerySimpleInterpreter.Lexer
 
         public char NextChar()
         {
+            Column++;
             Char c = '\0';
             if (!_reader.EndOfStream)
                 c = (Char) _reader.Read();
