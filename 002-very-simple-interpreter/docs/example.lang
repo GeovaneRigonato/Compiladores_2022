@@ -1,6 +1,7 @@
-read $x
-read $x
-$y = 2
-$z = 2
-$w = 5 * 2
-write $w
+$a = 12
+$b = 66
+$c = ((99 + 2) * 4)*2
+write $a
+write $b
+write $c
+

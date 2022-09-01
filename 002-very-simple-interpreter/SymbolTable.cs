@@ -56,6 +56,17 @@ namespace VerySimpleInterpreter
             return (null, 0);
         }
 
+        //getValue
+        public double? GetValue(int? Value)
+        {
+            if (Value == null)
+            {
+                return null;
+            }
+            Console.WriteLine("\n" + _data[Value.Value].Name + " = " + _data[Value.Value].Value+ "\n");
+            return _data[Value.Value].Value;
+        }
+
         public double? Get(Int32 key)
         {
             if (!(_data.ContainsKey(key)))

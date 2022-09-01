@@ -75,15 +75,15 @@ namespace VerySimpleInterpreter.Lexer
             }
             if (Char.IsDigit(_peek.Value))  //[0-9]+
             {
-                var value = 0;                
-                do {
+                var value = 0;
+                do
+                {
+                    value = 10 * value + (int)Char.GetNumericValue(_peek.Value);
                     _peek = NextChar();
-                    value = value * 10 + GetValue(_peek);
                 } while (Char.IsDigit(_peek.Value));
 
                 return new Token(ETokenType.NUM, value);
-            }        
-            
+            }
             return new Token(ETokenType.ERR);
         }
 

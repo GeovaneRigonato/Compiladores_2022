@@ -1,0 +1,15 @@
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/bin/Debug/net6.0/very-simple-interpreter
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/bin/Debug/net6.0/very-simple-interpreter.deps.json
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/bin/Debug/net6.0/very-simple-interpreter.runtimeconfig.json
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/bin/Debug/net6.0/very-simple-interpreter.dll
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/bin/Debug/net6.0/ref/very-simple-interpreter.dll
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/bin/Debug/net6.0/very-simple-interpreter.pdb
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.csproj.AssemblyReference.cache
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.GeneratedMSBuildEditorConfig.editorconfig
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.AssemblyInfoInputs.cache
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.AssemblyInfo.cs
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.csproj.CoreCompileInputs.cache
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.dll
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/ref/very-simple-interpreter.dll
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.pdb
+/home/geovane/Desktop/Uenp/Compiladores/Compiladores_2022/002-very-simple-interpreter/obj/Debug/net6.0/very-simple-interpreter.genruntimeconfig.cache

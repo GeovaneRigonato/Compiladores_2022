@@ -18,18 +18,10 @@ namespace VerySimpleInterpreter.Parser
         {
             if (_lookAhead.Type == type)
                 _lookAhead = _lexer.GetNextToken();
-            else
-                Error("Expected " + type + " - Found " + _lookAhead.Type);
         }
 
-        public void Error(String msg)
+        public void Error(String message)
         {
-            Console.WriteLine("#Error on _____ "+_lookAhead.Type+" "+_lookAhead.Value);
-            Console.WriteLine("Line " + _lexer.Line);
-            Console.WriteLine("Column " + _lexer.Column);
-            Console.WriteLine("________________");
-            Console.WriteLine(msg);
-            Console.WriteLine("________________");
         }
 
         public void Prog() // prog   : lineX
@@ -72,7 +64,9 @@ namespace VerySimpleInterpreter.Parser
 
         public void Output() // out    : OUTPUT VAR
         {
+           
             Match(ETokenType.OUTPUT);
+            _symbolTable.GetValue(_lookAhead.Value);
             Match(ETokenType.VAR);
         }
 
@@ -82,12 +76,13 @@ namespace VerySimpleInterpreter.Parser
             Match(ETokenType.VAR);
             Match(ETokenType.AT);
             var e = Expr();
-            if (refx != null){
-                var entry =_symbolTable.GetEntry(refx.Value);
+            if (refx != null)
+            {
+                var entry = _symbolTable.GetEntry(refx.Value);
                 if (entry != null)
                     entry.Value = e;
             }
-                
+
         }
 
         public Double Expr() //expr   : termY
@@ -97,7 +92,6 @@ namespace VerySimpleInterpreter.Parser
         }
         public Double Y(Double left) //Y      : vazio | + expr | - expr
         {
-            
             if (_lookAhead.Type == ETokenType.SUM)
             {
                 Match(ETokenType.SUM);
@@ -112,7 +106,7 @@ namespace VerySimpleInterpreter.Parser
             }
             else if (!TestFollow(ETokenType.CE, ETokenType.EOL))
             {
-                Error("Found "+ _lookAhead.Type.ToString() +" Expected CE or EOL");
+                Error("Found " + _lookAhead.Type.ToString() + " Expected CE or EOL");
             }
             return left;
         }
@@ -138,19 +132,21 @@ namespace VerySimpleInterpreter.Parser
             }
             else if (!TestFollow(ETokenType.CE, ETokenType.EOL))
             {
-                Error("Found "+ _lookAhead.Type.ToString() +" Expected CE or EOL");
+                Error("Found " + _lookAhead.Type.ToString() + " Expected CE or EOL");
             }
             return left;
         }
         public Double Fact() //fact   : NUM | VAR | OE expr CE
         {
-            if (_lookAhead.Type == ETokenType.NUM){
+            if (_lookAhead.Type == ETokenType.NUM)
+            {
                 Double num = Convert.ToDouble(_lookAhead.Value);
                 Match(ETokenType.NUM);
                 return num;
             }
-                
-            else if (_lookAhead.Type == ETokenType.VAR){
+
+            else if (_lookAhead.Type == ETokenType.VAR)
+            {
                 int? key = _lookAhead.Value;
                 Double val = 0;
                 if (key == null)
@@ -162,7 +158,7 @@ namespace VerySimpleInterpreter.Parser
                 }
                 return val;
             }
-                
+
             else if (_lookAhead.Type == ETokenType.OE)
             {
                 Match(ETokenType.OE);
